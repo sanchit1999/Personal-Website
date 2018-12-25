@@ -1,0 +1,138 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+#footer2
+{font-family: Lucida;
+grid-area: footer;
+text-align:center;
+padding: 2vw;
+color:white;
+font-weight:bold;
+margin-top:-2vw;
+}
+.animate-bottom
+{
+	position:relative;
+	animation:animatebottom 4s}
+	@keyframes animatebottom
+{     
+	from{bottom:-300px;opacity:0}  
+	    to{bottom:0;opacity:1}
+}
+.animate-left
+{
+	position:relative;
+	animation:animateleft 4s}
+	@keyframes animateleft
+{     
+	from{left :-300px;opacity:0}  
+	    to{left:0;opacity:1}
+}
+body{ 
+	 background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('./int.jpg');
+    background-size:100% 100vh;
+    margin: 0px 0px 0px 0px;
+    grid-template-areas:
+     "footer";
+}
+
+#heading{ 
+	margin-top: 0vw;
+	margin-bottom: 0vw;
+	color: #dddddd;
+text-align: center;
+font-family: Arial black;
+font-size: 5vw;
+animation: 15s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  }
+
+#p1{
+	color:#4169e1;
+	font-family:Times;
+	font-size:2vw;
+	margin-top:1vw;
+	
+}
+#p2{
+	color:#9acd32;
+	font-family:Times;
+	font-size:2vw;
+	margin-top:1vw;
+	margin-left:1vw;
+	
+}
+#p3{
+	color:#eedd82;
+	font-family:Times;
+	font-size:2vw;
+	margin-top:1vw;
+	margin-left:1vw;
+}
+#p4{
+	color:#9acd32;
+	text-align: center;
+	font-family:Times;
+	font-weight:bold;
+	font-size:2vw;
+	margin-top:1vw;
+	
+}
+#p5{
+	color:#ffa500;
+	font-family:Times;
+	font-size:2vw;
+	margin-top:1vw;
+	margin-left:1vw;
+}
+#head2{
+margin-top: 0vw;
+margin-left:1vw;
+	margin-bottom: 0vw;
+	color: #dddddd;
+font-family: Arial black;
+font-size: 3vw;
+animation: 15s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+
+}
+#ul{
+	width:100%;
+	z-index:10000;
+	position:fixed;
+	opacity:0.8;
+  margin-top:0px;
+  padding:0px;
+  margin-bottom:1vw;
+list-style-type: none;
+border-collapse: collapse;
+overflow:hidden;
+background-color:#333333;
+}
+li
+{
+  float:left;
+}
+li a {
+	font-family: arial black;
+display:block;
+color:white;
+text-align:center;
+text-decoration:none;
+padding:1.7vw 35.7%;
+}
+.active{
+  background-color:#A9A9A9;
+}
+li a:hover:not(.active){
+	color:black;
+  background-color:#A9A9A9;
+}

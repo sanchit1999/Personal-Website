@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sanchit Saini</title>
+<style>
+@keyframes fadeIn {
+	0% {
+opacity: 0;
+	}
+	100% {
+visibility: visible;
+opacity: 1;
+	}
+}
+#footer2
+{font-family: Lucida;
+	grid-area: footer;
+	text-align:center;
+padding: 2vw;
+color:white;
+      font-weight:bold;
+      margin-top:-2vw;
+}
+.animate-bottom
+{
+position:relative;
+animation:animatebottom 4s}
+@keyframes animatebottom
+{     
+	from{bottom:-300px;opacity:0}  
+	to{bottom:0;opacity:1}
+}
+.animate-left
+{
+position:relative;
+animation:animateleft 4s}
+@keyframes animateleft
+{     
+	from{left :-300px;opacity:0}  
+	to{left:0;opacity:1}
+}
+body{ 
+background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('./int.jpg');
+	    background-size:100% 100vh;
+margin: 0px 0px 0px 0px;
+	grid-template-areas:
+		"footer";
+}
+
+#heading{ 
+	margin-top: 0vw;
+	margin-bottom: 0vw;
+color: #dddddd;
+       text-align: center;
+       font-family: Arial black;
+       font-size: 5vw;
+animation: 15s fadeIn;
+	   animation-fill-mode: forwards;
+visibility: hidden;
+}
+
+#p1{
+color:#4169e1;
+      font-family:Times;
+      font-size:2vw;
+      margin-top:1vw;
+
+}
+#p2{
+color:#9acd32;
+      font-family:Times;
+      font-size:2vw;
+      margin-top:1vw;
+      margin-left:1vw;
+
+}
+#p3{
+color:#eedd82;
+      font-family:Times;
+      font-size:2vw;
+      margin-top:1vw;
+      margin-left:1vw;
+}
+#p4{
+color:#9acd32;
+      text-align: center;
+      font-family:Times;
+      font-weight:bold;
+      font-size:2vw;
+      margin-top:1vw;
+
+}
+#p5{
+color:#ffa500;
+      font-family:Times;
+      font-size:2vw;
+      margin-top:1vw;
+      margin-left:1vw;
+}
+.head2{
+	margin-top: 0vw;
+	margin-left:1vw;
+	margin-bottom: 0vw;
+color: #dddddd;
+       font-family: Arial black;
+       font-size: 3vw;
+animation: 15s fadeIn;
+	   animation-fill-mode: forwards;
+visibility: hidden;
+
+}
+#ul{
+width:100%;
+      z-index:10000;
+position:fixed;
+opacity:0.8;
+	margin-top:0px;
+padding:0px;
+	margin-bottom:1vw;
+	list-style-type: none;
+	border-collapse: collapse;
+overflow:hidden;
+	 background-color:#333333;
+}
+li
+{
+float:left;
+}
+li a {
+	font-family: arial black;
+display:block;
+color:white;
+      text-align:center;
+      text-decoration:none;
+padding:1.7vw 35.7%;
+}
+.active{
+	background-color:#A9A9A9;
+}
+li a:hover:not(.active){
+color:black;
+      background-color:#A9A9A9;
+}
+</style>
+</head>
+<body>
+<ul id="ul">
+<li><a href="./index.html"><b>Home</b></a>
+<li><a href="./project2AM.html"><b>About Me</b></a>
+<li><a href="./project2I.html"><b>Interests</b></a>
+<li><a href="./project2G.html"><b>Gallery</b></a>
+<li><a href="./project2CM.html"><b>Contact Me</b></a>
+</ul>
+<br><br><br><br>
+<h1 id="heading">INTERESTS</h1><br><br>
+<h1 class="head2">Coding</h1>
+<p class="animate-bottom" id="p2">I developed interest in coding in class XI as I had taken Computer Science Course in my School. But I could understand its real importance only after JEE in terms of the problem-solving abilities one requires to excel in it. I started practicising on various competitive coding websites after JEE like codechef, codeforces which increased my exposure towards the subject.</p>
+<h1 class="head2">Sports</h1>
+<p class="animate-left" id="p3">I was interested in sports from the very beginning. I started playing hockey and table tennis in class VI <sup>th</sup>. I had interest in both the sports.
+In class VIII <sup>th</sup>, I played interzonals of TT in Delhi and played Delhi State for Hockey in class IX <sup> th</sup>.
+Besides these I also like swimming, football and running. I believe that one should always focus on his well physical being as it refreshes our mind and helps us improve further academics-wise.</p>
+<h1 class="head2">Movies/Sitcoms</h1>
+<p class="animate-bottom" id="p5">I am a lot into Hollywood movies and sitcoms. In particular, I like suspense thrillers,comical and action movies. I am a big fan of Jason Statham and follow his movies. I have completed various comical sitcoms and hope to continue watching them.</p>
+<p id="footer2">Copyright&copy; 2017 Sanchit Saini | All Rights Reserved.</p> 
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sanchit Saini</title>
+<style>
+@keyframes fadeIn {
+	0% {
+opacity: 0;
+	}
+	100% {
+visibility: visible;
+opacity: 1;
+	}
+}
+a{
+color: white;
+       text-decoration: none;
+}
+a:hover{
+color: black;
+  }
+.animate-bottom
+{
+position:relative;
+animation:animatebottom 4s}
+@keyframes animatebottom
+{     
+	from{bottom:-300px;opacity:0}  
+	to{bottom:0;opacity:1}
+}
+.animate-left
+{
+position:relative;
+animation:animateleft 4s}
+@keyframes animateleft
+{     
+	from{left :-300px;opacity:0}  
+	to{left:0;opacity:1}
+}
+body{ 
+	background-repeat:no-repeat;
+background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('./gallery.jpg');
+	    background-size:100vw 50vw;
+margin: 0px 0px 0px 0px;
+	grid-template-areas:
+		"footer";
+}
+
+#heading{ 
+	margin-top: 0vw;
+	margin-bottom: 0vw;
+color: #dddddd;
+       text-align: center;
+       font-family: Arial black;
+       font-size: 4vw;
+animation: 15s fadeIn;
+	   animation-fill-mode: forwards;
+visibility: hidden;
+}
+#p1{
+color:#4169e1;
+      font-family:Times;
+      font-size:150%;
+      margin-top:20px;
+
+}
+#p2{
+color:#9acd32;
+      font-family:Times;
+      font-size:150%;
+      margin-top:20px;
+      margin-left:20px;
+
+}
+#p3{
+color:#eedd82;
+      font-family:Times;
+      font-size:150%;
+      margin-top:20px;
+      margin-left:20px;
+}
+#p4{
+color:#9acd32;
+      text-align: center;
+      font-family:Times;
+      font-weight:bold;
+      font-size:170%;
+      margin-top:20px;
+
+}
+#p5{
+color:#ffa500;
+      font-family:Times;
+      font-size:150%;
+      margin-top:20px;
+      margin-left:20px;
+}
+#head2{
+	margin-top: -10px;
+	margin-left:20px;
+	margin-bottom: -10px;
+color: #dddddd;
+       font-family: Arial black;
+       font-size: 250%;
+animation: 15s fadeIn;
+	   animation-fill-mode: forwards;
+visibility: hidden;
+
+}
+#ul{
+width:100%;
+      z-index:10000;
+position:fixed;
+opacity:0.8;
+	margin-top:0px;
+padding:0px;
+	margin-bottom:1vw;
+	list-style-type: none;
+	border-collapse: collapse;
+overflow:hidden;
+	 background-color:#333333;
+}
+li
+{
+float:left;
+}
+li a {
+	font-family: arial black;
+display:block;
+color:white;
+      text-align:center;
+      text-decoration:none;
+padding:1.5vw 35.7%;
+}
+.active{
+	background-color:#A9A9A9;
+}
+li a:hover:not(.active){
+color:black;
+      background-color:#A9A9A9;
+}
+#image{
+width:45vw;
+height:35vw;
+       margin-left:28vw;
+}
+</style>
+</head>
+<body onload="setInterval(display,3000)">
+<script>
+var flag=1;
+function display()
+{ document.getElementById("image").src="./"+flag+".jpg";
+	flag=flag+1;
+	if(flag==9)
+		flag=1;
+}
+</script>
+<ul id="ul">
+<li><a href="./index.html"><b>Home</b></a>
+<li><a href="./project2AM.html"><b>About Me</b></a>
+<li><a href="./project2I.html"><b>Interests</b></a>
+<li><a href="./project2G.html"><b>Gallery</b></a>
+<li><a href="./project2CM.html"><b>Contact Me</b></a>
+</ul>
+<br><br><br><br>
+<h1 id="heading">GALLERY</h1><br>
+<img src="1.jpg" id="image" alt="loading problem"> 
+</body>
+</html>

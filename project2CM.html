@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sanchit Saini</title>
+<style>
+@keyframes fadeIn {
+	0% {
+opacity: 0;
+	}
+	100% {
+visibility: visible;
+opacity: 1;
+	}
+}
+a{
+color: white;
+       text-decoration: none;
+}
+.animate-bottom
+{
+position:relative;
+animation:animatebottom 4s}
+@keyframes animatebottom
+{     
+	from{bottom:-300px;opacity:0}  
+	to{bottom:0;opacity:1}
+}
+.animate-left
+{
+position:relative;
+animation:animateleft 4s}
+@keyframes animateleft
+{     
+	from{left :-300px;opacity:0}  
+	to{left:0;opacity:1}
+}
+body{ 
+background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('./cm2.jpg');
+	    background-size:100% 100vh;
+margin: -20px 0px 0px 0px;
+	grid-template-areas:
+		"footer";
+}
+#ul{
+	z-index:5000;
+opacity:0.8;
+position:fixed;
+	 margin-top:0vw;
+padding:0px;
+	margin-bottom:2vw;
+	list-style-type: none;
+	border-collapse: collapse;
+overflow:hidden;
+	 background-color:#333333;
+width:100%;
+}
+li
+{
+float:left;
+}
+li a {
+	font-family:arial black;
+display:block;
+color:white;
+      text-align:center;
+      text-decoration:none;
+padding:2vw 35.7%;
+	vertical-align: center;
+}
+.active{
+	background-color:#A9A9A9;
+}
+li a:hover:not(.active){
+color:black;
+      background-color:#A9A9A9;
+}
+
+.heading{ 
+	margin-top: 0vw;
+	margin-bottom: 0vw;
+color: black;
+       text-align: center;
+       font-family: Arial black;
+       font-size: 5vw;
+
+}
+#p1{
+color:#4169e1;
+      font-family:Times;
+      font-size:150%;
+      margin-top:20px;
+
+}
+#p2{
+color:#190033;
+      font-family:Times;
+      font-size:2.5vw;
+      margin-top:2vw;
+      margin-left:2vw;
+
+}
+#p3{
+color:#190033;
+      font-family:Times;
+      font-size:2.5vw;
+      margin-top:2vw;
+      margin-left:2vw;
+}
+#p4{
+color:#9acd32;
+      text-align: center;
+      font-family:Times;
+      font-weight:bold;
+      font-size:170%;
+      margin-top:20px;
+
+}
+#p5{
+color:#190033;
+      font-family:Times;
+      font-size:2.5vw;
+      margin-top:2vw;
+      margin-left:2vw;
+}
+#head2{
+	margin-top: -10px;
+	margin-left:20px;
+	margin-bottom: -10px;
+color: #dddddd;
+       font-family: Arial black;
+       font-size: 250%;
+animation: 15s fadeIn;
+	   animation-fill-mode: forwards;
+visibility: hidden;
+
+}
+#fb{
+width: 11vw;
+height: 8vw;	
+	margin-top: 3vw;
+	margin-left: 35vw;
+}
+#fb:hover{
+opacity: 0.5;
+}
+#git{
+width: 11vw;
+height: 8vw;	
+	margin-top: 3vw;
+	margin-left: -1vw;	
+}
+#git:hover{
+opacity: 0.5;
+}
+#gmail{
+width: 11vw;
+height: 8vw;	
+	margin-top: 3vw;
+	margin-left: 1vw;
+}
+#gmail:hover{
+opacity: 0.5;
+	 border-radius : 100%;
+}
+#gitlab{
+width: 11vw;
+height: 8vw;	
+	margin-top: 3vw;
+	margin-left: 2vw;	
+}
+#gitlab:hover{
+opacity: 0.5;
+	 border-radius : 100%;
+}
+#maps{
+width: 8vw;
+height: 6vw;	
+	margin-top: 3vw;
+	margin-left: 45vw;	
+}
+#maps:hover{
+opacity: 0.5;
+}
+#temp{
+color:white;
+      text-align:center;
+      font-weight:bold;
+      font-size: 100%;
+}
+#footer{
+color:black;
+      font-size:100%;
+      font-weight:bold;
+      text-align:center;
+}
+.but{
+	background-color:#333333;
+	margin-left:43vw;
+	border-radius:1vw;
+border:0.1vw solid #333029;
+display:inline-block;
+cursor:pointer;
+color:#A9A9A9;
+      font-family:Arial;
+      font-size:1vw;
+      font-weight:bold;
+padding:2vw 3vw;
+	text-decoration:none;
+}
+.but2{
+	background-color:#333333;
+	margin-left:44vw;
+	border-radius:1vw;
+border:0.1vw solid #333029;
+display:inline-block;
+cursor:pointer;
+color:#A9A9A9;
+      font-family:Arial;
+      font-size:1vw;
+      font-weight:bold;
+padding:2vw 3vw;
+	text-decoration:none;
+}
+.but:hover{
+
+	background-color:#333333;
+	margin-left:43vw;
+	border-radius:1vw;
+border:0.1vw solid #333029;
+display:inline-block;
+cursor:pointer;
+color:yellow;
+      font-family:Arial;
+      font-size:1vw;
+      font-weight:bold;
+padding:3.5vw 5vw;
+	text-decoration:underline;
+}
+.but2:hover{
+	background-color:#333333;
+	margin-left:44vw;
+	border-radius:1vw;
+border:0.1vw solid #333029;
+display:inline-block;
+cursor:pointer;
+color:yellow;
+      font-family:Arial;
+      font-size:1vw;
+      font-weight:bold;
+padding:3.5vw 5vw;
+	text-decoration:underline;
+}
+.but3{
+	background-color:#333333;
+	margin-left:45vw;
+	border-radius:1vw;
+border:0.1vw solid #333029;
+display:inline-block;
+cursor:pointer;
+color:#A9A9A9;
+      font-family:Arial;
+      font-size:1vw;
+      font-weight:bold;
+padding:2vw 3vw;
+	text-decoration:none;
+}
+#box{
+padding:0px;
+	margin-left:34vw;
+}
+.box1{
+	margin-left:40vw;
+}
+.txt{
+color:black;
+      text-align: center;
+}
+#sugg{
+text-align:center;
+font-weight:bold;
+}
+</style>
+</head>
+<body> 
+	<script>
+function display()
+{   
+	document.getElementById("temp").innerHTML="sanchitsaini1999@gmail.com";
+}
+function alt()
+{
+	alert("Thanks for your response :)")
+}
+</script>
+<ul id="ul">
+<li><a href="./index.html"><b>Home</b></a>
+<li><a href="./project2AM.html"><b>About Me</b></a>
+<li><a href="./project2I.html"><b>Interests</b></a>
+<li><a href="./project2G.html"><b>Gallery</b></a>
+<li><a href="./project2CM.html"><b>Contact Me</b></a>
+</ul>
+<br><br><br><br><br>
+<h1 class="heading"><u>CONTACT ME</u></h1>
+<br><br><br><br><br><br><br><br>
+  <input type="button" onclick="document.getElementById('contact').scrollIntoView()" class="but2" value="Contact">
+<br><br><br><br><br><br><br>
+<input type="button" onclick="document.getElementById('Suggestions').scrollIntoView()" class="but" value="Feedback">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p id="contact"></p>
+<br><br><br><br><br><br>
+<h1 class="heading"><u>GET IN TOUCH!</u></h1>
+<h1 id="p2">Mob  :9650******</h1>
+<h1 id="p3">Email  : sanchit.saini@students.iiit.ac.in</h1>
+<h1 id="p5">Address  : Room No-224,Bakul Nivas, IIIT Hyderabad, Gachibowli,Hyderabad - 500032</h1>
+<a href="https://www.facebook.com/sanchit.saini.520">
+<img id="fb" src="./fb.png" alt="loding problem">
+</a>
+<a href="https://github.com/sanchit1999/">
+<img id="git" src="./git.svg" alt="loading problem">
+</a>
+<a href="https://gitlab.com/ss_1729">
+<img id="gitlab" src="./gitlab.png" alt="loading problem">
+</a>
+<p id="temp"></p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p id="Suggestions"></p>
+<br><br><br><br><br><br>
+<h1 class="heading"><u>Feedback</u></h1>
+<br><br><br>
+<form>
+<p id="sugg">SUGGESTIONS:</p><br><br>
+<p class="txt">First Name:</p>
+<input type="text" name="firstname" class="box1"><br><br>
+<p class="txt">Last Name:</p>
+<input type="text" name="lastname" class="box1"><br><br>
+</form>
+<form>
+<p class="txt">Suggestion:</p>
+<textarea id="box" rows="12" cols="60"></textarea>
+<br><br><br><br>
+<button type="button" class="but3" onclick="alt()">Submit</button>
+</form>
+<br><br>
+<a href="https://www.google.co.in/maps/place/Bakul+Nivas/@17.4480266,78.3461881,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb93a3694c1093:0xda3e609fd9666245!8m2!3d17.4480215!4d78.3483768"><img id="maps" src="./mapnew.png" alt="loading problem"></a><br>
+<p id="footer">Copyright&copy; 2017 Sanchit Saini | All Rights Reserved.</p> 
+</body>
+</html>	
